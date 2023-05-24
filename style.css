@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,200&family=Roboto:wght@300&family=Ubuntu&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  line-height: 1.6;
+  height: 180vh;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+#video-background {
+  position: fixed;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 150vh;
+  z-index: -1;
+  filter: brightness(0.6);
+
+
+  font-family: 'Barlow', sans-serif;
+}
+
+.content {
+  margin-top: 80px;
+  z-index: 1;
+  margin-left: 25px;
+  padding: 2px;
+  margin-bottom: 30px;
+  color: rgb(20, 20, 149);
+}
+
+.name {
+  color: rgb(184, 19, 19);
+  width: 38vw;
+  margin-left: 34px;
+
+}
+
+.card {
+  width: 20vw;
+}
+
+.card img {
+  width: 20vw;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  padding: 4px 14rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 126px;
+
+  font-family: 'Barlow', sans-serif;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+
+}
+
+
+.image img {
+  width: 22vw;
+  border-radius: 11px;
+  scroll-behavior: smooth;
+  border: 2px solid white;
+  border-radius: 6px;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.text {
+  width: 30vw;
+  border: 2px solid white;
+  border-radius: 10px;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  background-color: rgba(18, 44, 149, 0.875);
+  padding: 8px;
+
+}
+
+.text h3 {
+  color: rgb(249, 43, 25);
+  text-align: center;
+  font-weight: bold;
+  text-align: start;
+}
+
+.text p {
+  color: white;
+  font-weight: bold;
+  text-align: start;
+
+
+}
+#co {
+  color: rgb(184, 19, 19);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+
+
+.footer{
+  height: 10vh;
+  background-color:none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button{
+  background-color: rgb(11, 160, 11);
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 7px;
+  width: 187px;
+  color: white;
+  
+  font-size: 250px;
+}
+
+button:hover{
+  background-color: rgb(6, 91, 6);
+  font-weight: bold;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+  .cards{
+    flex-direction: column;
+    margin-bottom: 60px;
+    
+    padding: 20px 0;
+    /* justify-content: start;
+    align-items: start; */
+  }
+  .text{
+    width: 40vw;
+    text-overflow: clip;
+    margin: 10px 0;
+  }
+  .image img{
+    width: 40vw;
+   margin: 0;
+   
+  }
+  #video-background{
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer{
+    flex-wrap: wrap;
+  }
+  .content{
+    margin-top: 100px;
+  }
+}
